@@ -22,7 +22,7 @@ Matlab code for estimating labor supply and demand shocks during COVID-19.
 
 [Plots](./Plots/): plots of priors and posteriors of labor elasticities, and IRF
 
-[Shocks](./Plots/): historical decomposition results for each NAICS2 and NAICS3 sector + Difference between HD of hours coming from supply and demand shocks for NAICS2 only. 
+[Shocks](./Shocks/): historical decomposition results for each NAICS2 and NAICS3 sector + Difference between HD of hours coming from supply and demand shocks for NAICS2 only. 
 - No sufix in file name after hd: median estimate
 - L sufix in file name after hd: 2.5 percentile estimate
 - U sufix in file name after hd: 97.5 percentile estimate
