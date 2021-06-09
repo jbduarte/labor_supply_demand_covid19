@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94243d74-b9af-4db2-a8b7-57e380e9115e" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/gitignore.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gitignore.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +116,7 @@
       <workItem from="1623103109261" duration="270000" />
       <workItem from="1623103401900" duration="2261000" />
       <workItem from="1623176903221" duration="230000" />
-      <workItem from="1623225642555" duration="3053000" />
+      <workItem from="1623225642555" duration="3132000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1591137137520</created>
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623234966093</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Initial commit">
+      <created>1623235147390</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1623235147390</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
