@@ -14,8 +14,8 @@ Matlab code for estimating labor supply and demand shocks during COVID-19.
 [Matlab](./Matlab/): code
 
 - [main.m](./Matlab/main.m): main file to run to compute the posterior distributions of the structural parameters, the IRF, and the historical decomposition
-- [readData.m](./Matlab/ReadData.m): function that reads data and applies data transformations
-- [model_estimation.m](./Matlab/ReadData.m): function that estimates the posterior distribution of the SVAR using random walk Metropolis-Hastings
+- [readData.m](./Matlab/readData.m): function that reads data and applies data transformations
+- [model_estimation.m](./Matlab/model_estimation.m): function that estimates the posterior distribution of the SVAR using random walk Metropolis-Hastings
 - [irf.m](./Matlab/irf.m): computes and saves IRF
 - [histDecomp.m](./Matlab/histDecomp.m): computes and saves the historical decomposition of hours and wages
   
