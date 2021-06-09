@@ -1,6 +1,6 @@
 # Measuring Sectoral Supply and Demand Shocks during COVID-19
 
-Matlab code for estimating labor supply and demand shocks during COVID-19. 
+Matlab code for estimating labor supply and demand shocks during COVID-19. The code is a straightforward adaptation of Christiane Baumeister and James D. Hamilton (2015) code available at Christiane's personal [webpage](https://sites.google.com/site/cjsbaumeister/research).
 
 **Reference**: Brinca, Duarte and Faria-e-Castro (2020)
 "Measuring Sectoral Supply and Demand Shocks during COVID-19". [[Slides]](https://jbduarte.com/files/seacen_slides.pdf) &nbsp; [[Paper]](https://s3.amazonaws.com/real.stlouisfed.org/wp/2020/2020-011.pdf) 
