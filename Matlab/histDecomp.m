@@ -142,7 +142,7 @@ end
 % =========================================================
 % Save hours results
 
-if subsectors == 0
+if subsectors == 0 && production == 0
 % save difference of historical shocks median, lower and upper bounds for
 % hours
 dlmwrite(strcat("../Shocks/Difference/", sector, "_hd_diff.txt"),QHD0(2,:));
@@ -176,6 +176,42 @@ dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdL_demand_wages.txt"),QH1(1,1,:)
 dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdL_supply_wages.txt"),QH1(1,2,:));
 dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdU_demand_wages.txt"),QH2(1,1,:));
 dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdU_supply_wages.txt"),QH2(1,2,:));
+end
+
+if subsectors == 0 && production == 1
+    % save difference of historical shocks median, lower and upper bounds for
+% hours
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hd_diff_production.txt"),QHD0(2,:));
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hdL_diff_production.txt"),QHD1(2,:));
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hdU_diff_production.txt"),QHD2(2,:));
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hdL2_diff_production.txt"),QHD3(2,:));
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hdU2_diff_production.txt"),QHD4(2,:));
+
+% save difference of historical shocks median, lower and upper bounds for
+% wages
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hd_diff_wages_production.txt"),QHD0(1,:));
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hdL_diff_wages_production.txt"),QHD1(1,:));
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hdU_diff_wages_production.txt"),QHD2(1,:));
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hdL_diff_wages_production.txt"),QHD3(1,:));
+dlmwrite(strcat("../Shocks/Difference/", sector, "_hdU_diff_wages_production.txt"),QHD4(1,:));
+
+% save demand and supply historical shocks  median, lower and upper bounds
+% for hours
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hd_demand_production.txt"),QH0(2,1,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hd_supply_production.txt"),QH0(2,2,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdL_demand_production.txt"),QH1(2,1,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdL_supply_production.txt"),QH1(2,2,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdU_demand_production.txt"),QH2(2,1,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdU_supply_production.txt"),QH2(2,2,:));
+
+% save demand and supply historical shocks  median, lower and upper bounds
+% for wages
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hd_demand_wages_production.txt"),QH0(1,1,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hd_supply_wages_production.txt"),QH0(1,2,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdL_demand_wages_production.txt"),QH1(1,1,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdL_supply_wages_production.txt"),QH1(1,2,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdU_demand_wages_production.txt"),QH2(1,1,:));
+dlmwrite(strcat("../Shocks/NAICS2/", sector, "_hdU_supply_wages_production.txt"),QH2(1,2,:));
 end
 
 if subsectors == 1
