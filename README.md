@@ -7,6 +7,8 @@ Matlab code for estimating labor supply and demand shocks during COVID-19. The c
 
 ## Contents
 
+[Composition Effects]("./Composition Effects/"): replication of robustness exercises to compositions effects 
+
 [Data](./Data/): US monthly data on hours and real wages by NAICS2 and NAICS3 sectors of activity. For NAICS2, there is data on production only employees and all employees, while for NAICS3 all data is for production only employees. 
 
 - There are also two spreadsheets with the sector names for NAICS2 and NAICS3, respectively.
@@ -19,7 +21,7 @@ Matlab code for estimating labor supply and demand shocks during COVID-19. The c
 - [irf.m](./Matlab/irf.m): computes and saves IRF
 - [histDecomp.m](./Matlab/histDecomp.m): computes and saves the historical decomposition of hours and wages
   
-[Paper Figures](./Paper Figures/): all paper figures in pdf
+[Paper Figures]("./Paper Figures/"): all paper figures in pdf
 
 [Plots](./Plots/): plots of priors and posteriors of labor elasticities, and IRF
 
@@ -32,7 +34,7 @@ Matlab code for estimating labor supply and demand shocks during COVID-19. The c
 - L sufix in file name after hd: 2.5 percentile estimate
 - U sufix in file name after hd: 97.5 percentile estimate
 
-To replicate historical decompositions of Brinca, Duarte and Faria-e-Castro (2020): 
+To replicate historical decompositions of Brinca, Duarte and Faria-e-Castro (2021): 
 - **NAICS2 for all employees**: run main with production=0 and subsectors=0
 - **NAICS2 for production only employees**: run main with production=1 and subsectors=0
 - **NAICS3 for production only employees**: run main with subsectors=1
