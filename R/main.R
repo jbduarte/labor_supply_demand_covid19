@@ -31,7 +31,7 @@ sectors_data <- data.frame(sectors = dic$sector_name,
 sector <- sectors_data$sectors[14]
 shocks <- getshocks(sector, subsectors=0)
 g <- hd_ts_plot(sector, shocks[1:163, ])
-ggsave(paste("../Paper Figures/figure2a.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure2a.pdf", sep = ""),
          g, units = "mm",
          width = 160,
          height = 90)
@@ -40,14 +40,14 @@ ggsave(paste("../Paper Figures/figure2a.pdf", sep = ""),
 sector <- sectors_data$sectors[12]
 shocks <- getshocks(sector, subsectors=0)
 g <- hd_ts_plot(sector, shocks[1:163, ])
-ggsave(paste("../Paper Figures/figure2b.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure2b.pdf", sep = ""),
          g, units = "mm",
          width = 160,
          height = 90)
 
 # Figure 3: Historical decomposition of the growth rate of hours by NAICS 2-digit sectors in March 2020
 p = my_bar(2)
-ggsave(paste("../Paper Figures/figure3.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure3.pdf", sep = ""),
        p,
        units = "mm",
        width = 160,
@@ -56,7 +56,7 @@ ggsave(paste("../Paper Figures/figure3.pdf", sep = ""),
 
 # Figure 4: Historical decomposition of the growth rate of hours by NAICS 2-digit sectors in April 2020
 p = my_bar(1)
-ggsave(paste("../Paper Figures/figure4.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure4.pdf", sep = ""),
        p,
        units = "mm",
        width = 160,
@@ -109,7 +109,7 @@ p = ggplot(data_bar, aes(fill = Shock, x = x, y = value)) +
   ),
   legend.position="top") + scale_y_continuous(breaks = breaks, labels = labels )
 p
-ggsave(paste("../Paper Figures/figure5.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure5.pdf", sep = ""),
        p,
        units = "mm",
        width = 340,
@@ -161,7 +161,7 @@ p = ggplot(data_bar, aes(fill = Shock, x = x, y = value)) +
   ),
   legend.position="top") + scale_y_continuous(breaks = breaks, labels = labels )
 p
-ggsave(paste("../Paper Figures/figure6.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure6.pdf", sep = ""),
        p,
        units = "mm",
        width = 340,
@@ -170,7 +170,7 @@ ggsave(paste("../Paper Figures/figure6.pdf", sep = ""),
 
 # Figure 7: Historical decomposition of the growth rate of hours by NAICS 2-digit sectors in May 2020
 p = my_bar(0)
-ggsave(paste("../Paper Figures/figure7.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure7.pdf", sep = ""),
        p,
        units = "mm",
        width = 160,
@@ -230,7 +230,7 @@ p <- ggplot(data, aes(x=supply, y=demand) ) +
             aes(supply,demand,label=naics3),hjust=-0.02, vjust=-0.2, size = 1.4) +
   theme(legend.text=element_text(size=7), legend.title=element_text(size=7))
 p
-ggsave(paste("../Paper Figures/figure9.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure9.pdf", sep = ""),
          p, units = "mm",
          width = 120,
          height = 120)
@@ -279,7 +279,7 @@ p <- ggplot(data[data$Month==3,], aes(x=Trade, y=Demand) ) +
            size = 2.5
   )
 p
-ggsave(paste("../Paper Figures/figure10a.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure10a.pdf", sep = ""),
        p, units = "mm",
        width = 120,
        height = 120)
@@ -326,7 +326,7 @@ p <- ggplot(data[data$Month==4,], aes(x=Trade, y=Demand) ) +
            size = 2.5
   )
 p
-ggsave(paste("../Paper Figures/figure10b.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure10b.pdf", sep = ""),
          p, units = "mm",
          width = 120,
          height = 120)
@@ -374,7 +374,7 @@ p <- ggplot(data[data$Month==3, ], aes(x=UI_claims, y=Supply) ) +
            size = 2.5
   )
 p
-ggsave(paste("../Paper Figures/figure11a.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure11a.pdf", sep = ""),
        p, units = "mm",
        width = 120,
        height = 120)
@@ -422,7 +422,7 @@ p <- ggplot(data[data$Month==4, ], aes(x=UI_claims, y=Supply) ) +
            size = 2.5
   )
 p
-ggsave(paste("../Paper Figures/figure11c.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure11c.pdf", sep = ""),
        p, units = "mm",
        width = 120,
        height = 120)
@@ -469,7 +469,7 @@ p <- ggplot(data[data$Month==3, ], aes(x=UI_claims, y=Demand) ) +
            size = 2.5
   )
 p
-ggsave(paste("../Paper Figures/figure11b.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure11b.pdf", sep = ""),
        p, units = "mm",
        width = 120,
        height = 120)
@@ -516,14 +516,14 @@ p <- ggplot(data[data$Month==4, ], aes(x=UI_claims, y=Demand) ) +
            size = 2.5
   )
 p
-ggsave(paste("../Paper Figures/figure11d.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure11d.pdf", sep = ""),
        p, units = "mm",
        width = 120,
        height = 120)
 
 # Figure 12: Historical decomposition of the growth rate of hours across sectors using production and nonsupervisory employees only, March 2020
 p = my_bar_production(1)
-ggsave(paste("../Paper Figures/figure12.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure12.pdf", sep = ""),
        p,
        units = "mm",
        width = 160,
@@ -532,7 +532,7 @@ ggsave(paste("../Paper Figures/figure12.pdf", sep = ""),
 
 # Figure 13: Historical decomposition of the growth rate of hours across sectors using production and nonsupervisory employees only, April 2020
 p = my_bar_production(0)
-ggsave(paste("../Paper Figures/figure13.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure13.pdf", sep = ""),
        p,
        units = "mm",
        width = 160,
@@ -624,7 +624,7 @@ p = ggplot(data_scat, aes(x=tele, y=value) ) +
            size = 2.5
   ) + coord_cartesian(ylim=c(-42,6), xlim=c(0.05,0.7))
 p
-ggsave(paste("../Paper Figures/figure15a.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure15a.pdf", sep = ""),
        p,
        units = "mm",
        width = 130,
@@ -656,7 +656,7 @@ p = ggplot(data_scat2, aes(x=tele, y=value) ) +
            size = 2.5
   )  + ylim(-42,6)
 p
-ggsave(paste("../Paper Figures/figure15c.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure15c.pdf", sep = ""),
        p,
        units = "mm",
        width = 130,
@@ -703,7 +703,7 @@ p = ggplot(data_scat, aes(x=tele, y=value) ) +
            size = 2.5
   )  + coord_cartesian(ylim=c(-42,6), xlim=c(0.05,0.7))
 p
-ggsave(paste("../Paper Figures/figure15b.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure15b.pdf", sep = ""),
        p,
        units = "mm",
        width = 130,
@@ -734,7 +734,7 @@ p = ggplot(data_scat2, aes(x=tele, y=value) ) +
            size = 2.5
   )  + ylim(-42,6)
 p
-ggsave(paste("../Paper Figures/figure15d.pdf", sep = ""),
+ggsave(paste("../Paper_Figures/figure15d.pdf", sep = ""),
        p,
        units = "mm",
        width = 130,
